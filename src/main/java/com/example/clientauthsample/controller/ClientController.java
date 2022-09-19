@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("api/client")
+@RequestMapping("client/api")
 public class ClientController {
 
     private final ClientService service;
@@ -17,7 +17,7 @@ public class ClientController {
         this.service = service;
     }
 
-    @GetMapping
+    @GetMapping("v1")
     public ResponseEntity<SampleDTO> main() {
         SampleDTO response = service.proxyToAuth();
 
