@@ -1,3 +1,12 @@
 server:
   port: 8082
 
+
+services:
+  keycloak:
+    client-id: sample-app
+    client-secret: fBeAqABXvlTvT1OxW84B0sL64wsfjHxv
+    token-uri: https://keycloak-mardensp-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/realms/sample-realm/protocol/openid-connect/token
+  auth-sample:
+    api-uri: http://localhost:8081/auth-sample/api/sample
+
