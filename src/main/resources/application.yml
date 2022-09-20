@@ -12,5 +12,5 @@ services:
     client-secret: kLhOhTr9f4j1cxYQNHkj2JpLFeE4iT4q
     token-uri: https://keycloak-mardensp-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/realms/sample-realm/protocol/openid-connect/token
   auth-sample:
-    api-uri: http://localhost:8081/api/sample
+    api-uri: https://auth-sample-git-mardensp-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/sample
 
