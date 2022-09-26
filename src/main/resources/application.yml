@@ -9,7 +9,7 @@ spring:
 services:
   keycloak:
     client-id: sample-app
-    client-secret: RTLs298vEqVuYZo5Lgk8FjOXGqCXUMSx
+    client-secret: ${OPENSHIFT_AUTH_SAMPLE_CLIENT_SECRET}
     token-uri: https://keycloak-mardensp-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/realms/sample-realm/protocol/openid-connect/token
   auth-sample:
     api-uri: https://auth-sample-git-mardensp-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/sample
